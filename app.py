@@ -23,7 +23,7 @@ try:
     if selection =="Extractor":
         st.write("Example: Elon musk's phone number is 9991116666, call him if you have any questions on dodgecoin. Tesla's revenue is 40 billion Tesla's CFO number (999)-333-7777")
         text = st.text_area("Enter text: ")
-        st.write("Example: "\"(\d{3}\)-\d{3}-\d{4}|\d{10} ")
+        st.write("Example: \(\d{3}\)-\d{3}-\d{4}|\d{10} ")
         pattern = st.text_area("Enter pattern to be found: ")
         matches = re.findall(pattern, text)
         if pattern:
